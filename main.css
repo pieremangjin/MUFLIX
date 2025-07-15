@@ -1,0 +1,313 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #F3DA3A;
+}
+
+body 
+{
+    /* cursor: none; */
+}
+
+/* .cursor 
+{
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid #F3DA3A;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 100;
+    transition: all 0.3s ease;
+    transform-origin: 100% 100%;
+    backdrop-filter: sepia(20%);
+    background-size: cover;
+
+} */
+
+/* header */
+header
+{
+    background-color: #244024;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a
+{
+    align-content: center;
+    font-size: 56px;
+    font-weight: bold;
+}
+
+/* main */
+main
+{
+    background-color: #244024;
+    padding: 200px 0 0 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 550px;
+}
+
+main *
+{
+    user-select: none;
+}
+
+main .flow1
+{
+    position: absolute;
+    right: 100px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    transform: rotate(15deg);
+}
+
+main .flow2
+{
+    position: absolute;
+    top: 380px;
+    left: 200px;
+    display: flex;
+    align-items: center;
+    transform: rotate(-15deg);
+}
+
+main .flow3
+{
+    position: absolute;
+    top: -30px;
+    left: 500px;
+}
+
+main .flow4
+{
+    position: absolute;
+    top: 500px;
+    right: 400px;
+}
+
+.flow1 img, .flow2 img, .flow3 img, .flow4 img
+{
+    position: relative;
+    margin-left: -40px;
+}
+
+.flow1 img:first-child
+{
+    margin-left: 0;
+}
+
+.flow1 img:last-child
+{
+    margin-top: -20px;
+    margin-left: -100px;
+}
+
+.flow2 img:first-child, .flow2 img:last-child
+{
+    margin-right: -50px;
+    margin-top: 100px
+}
+
+.flow2 img:nth-child(2)
+{
+    margin-right: -50px;
+}
+
+.flow3 img:first-child
+{
+    height: 150px;
+    transform: rotate(15deg);
+    top: 100px;
+}
+
+.flow3 img:nth-child(2)
+{
+    height: 100px;
+    transform: rotate(-20deg);
+    top: 200px;
+    left: 20px;
+}
+
+.flow3 img:last-child
+{
+    height: 150px;
+    transform: rotate(-15deg);
+    top: 150px;
+    left: 50px;
+}
+
+.flow4 img:first-child
+{
+    height: 150px;
+    transform: rotate(35deg);
+    top: -20px;
+}
+
+.flow4 img:nth-child(2)
+{
+    height: 150px;
+    transform: rotate(-5deg);
+    top: -100px;
+}
+
+.flow4 img:last-child
+{
+    height: 150px;
+    transform: rotate(-25deg);
+}
+
+/* ellipse */
+.wrapper 
+{
+    position: absolute;
+    width: 100%;
+    height: 750px;
+}
+
+.ellipse1, .ellipse2, .ellipse3, .ellipse4, .ellipse5, .ellipse6, .ellipse7, .ellipse8, .ellipse9, .ellipse10, .ellipse11, .ellipse12, .ellipse13, .ellipse14, .ellipse15, .ellipse16, .ellipse17
+{
+    position: absolute;
+    left: 50%;
+    transform: translate( -50%, -20%);
+    border: 1px solid #ffdd00a9;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.16), 0 -5px 8px rgba(255, 255, 255, 0.16);
+}
+
+.visible
+{
+    opacity: 1;
+}
+
+.ellipse1 { width: 250px; height: 600px;  }
+.ellipse2 { width: 350px; height: 600px;  }
+.ellipse3 { width: 450px; height: 600px; }
+.ellipse4 { width: 550px; height: 600px;  }
+.ellipse5 { width: 650px; height: 600px;  }
+.ellipse6 { width: 750px; height: 600px;  }
+.ellipse7 { width: 850px; height: 600px; }
+.ellipse8 { width: 950px; height: 600px; }
+.ellipse9 { width: 1050px; height: 600px;  }
+.ellipse10 { width: 1150px; height: 600px; }
+.ellipse11 { width: 1250px; height: 600px;  }
+.ellipse12 { width: 1350px; height: 600px;  }
+.ellipse13 { width: 1450px; height: 600px;  }
+.ellipse14 { width: 1550px; height: 600px; }
+.ellipse15 { width: 1650px; height: 600px;  }
+.ellipse16 { width: 1750px; height: 600px;  }
+.ellipse17 { width: 1850px; height: 600px; }
+
+
+/* section */
+section
+{
+   background-color: #244024;
+}
+
+section p
+{
+    padding-top: 100px;
+    padding-left: 10%;
+    text-align: left;
+    font-size: 30px; 
+    font-family: 'arial';
+    user-select: none
+}
+
+section .content
+{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+section .main_container
+{
+    display: flex;
+}
+
+.prev, .next
+{
+    width: 200px;
+    text-align: center;
+    padding-top: 15%;
+}
+
+.material-icons
+{
+    display: block;
+    font-size: 48px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+section .content > div
+{
+    padding: 50px 0;
+    align-items: center;
+}
+
+section .content .lp
+{
+    position: relative;
+    margin-right: 120px;
+}
+
+section .content .lp:last-child
+{
+    margin-right: 50px;
+}
+
+section .content .lp h1, .lp h5{
+    text-align: center;
+}
+
+section .content .image
+{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+section .content .lp_ellipse
+{
+    position: absolute;
+    top: 11%;
+    translate: (-50%);
+    z-index: 1;
+        cursor: pointer;
+}
+
+section .content .lp_ellipse img{
+    border-radius: 50%;
+}
+
+
+section .content .lp .image img
+{
+    width: 400px;
+}
+
+section .content .lp .lp_ellipse img{
+    width: 380px;
+}
+
+section .content .lp.open
+{
+    margin-right: 300px;
+}
